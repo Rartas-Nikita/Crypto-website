@@ -1,0 +1,621 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+:before,
+:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "SF Pro";
+}
+
+@font-face {
+    font-family: "SF Pro";
+    font-weight: 600;
+    src: url(../Fonts/SFPro600.ttf);
+}
+
+@font-face {
+    font-family: "SF Pro";
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: url(../Fonts/SFPro400.ttf);
+}
+
+.container {
+    max-width: 1580px;
+    margin: 0 auto 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    background-image: url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 1080px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    padding-top: 55px;
+}
+
+.home {
+    color: #FFFFFF;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    padding-left: 42px;
+}
+
+.crypto {
+    padding-top: 150px;
+    padding-bottom: 279px;
+    align-items: center;
+    text-align: center;
+}
+
+.crypto__title {
+    padding-bottom: 86px;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 86px;
+    color: #FFFFFF;
+    width: 476px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.crypto__title span {
+    color: #FFA26B;
+}
+
+.crypto__text {
+    padding-bottom: 116px;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #D0C9D6;
+    margin: 0 auto;
+    width: 494px;
+}
+
+
+
+.crypto__link {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    background: #6979F8;
+    border-radius: 10px;
+    width: 366px;
+    padding: 30px 67px;
+    transition: all .3s;
+}
+
+.crypto__link:hover {
+    background-color: #4050c8;
+}
+
+.arrow {
+    display: none;
+    margin: auto;
+}
+
+.info {
+    background-color: #1A051D;
+    max-height: 1080px;
+    padding: 200px 0 213px;
+}
+
+.info__inner {
+    display: flex;
+    margin-bottom: -160px;
+}
+
+.info__text {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 86px;
+    padding-top: 80px;
+    color: #FFFFFF;
+    text-align: start;
+    margin-right: 50px;
+    max-width: 684px;
+}
+
+.info__text span {
+    color: #FFA26B;
+}
+
+.coin {
+    flex-basis: 574px;
+    max-width: 667px;
+    margin-left: 50px;
+    padding: 89px 104px 75px 104px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.coin__column {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid #3F3356;
+}
+
+.coin__column:nth-last-child(1) {
+    border: none;
+    margin-bottom: 0;
+}
+
+.coin__column:not(:first-child) {
+    margin-top: 20px;
+}
+
+.coin__list {
+    display: flex;
+    align-items: center;
+
+}
+
+.coin__img {
+    padding-right: 29px;
+}
+
+.coin__title {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.coin__subtitle {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #D0C9D6;
+}
+
+.coin__pay {
+    text-align: end;
+}
+
+.coin__price {
+    display: flex;
+    align-items: center;
+}
+
+.coin__money {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.coin__percent {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.coin__percent_active {
+    color: #00C48C;
+}
+
+.coin__percent_negative {
+    color: #FF647C;
+}
+
+.coin__button {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: #6979F8;
+    text-align: center;
+    border: 1px solid #6979F8;
+    border-radius: 5px;
+    padding: 13px 18px 14px 18px;
+    margin-left: 29px;
+    transition: all .3s;
+}
+
+.coin__button:hover {
+    background-color: #6979F8;
+    color: #FFFFFF;
+}
+
+.info__link {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    width: 366px;
+    background: #6979F8;
+    border-radius: 10px;
+    padding: 31px 89px;
+    transition: all .3s;
+}
+
+.info__link:hover {
+    background-color: #4050c8;
+}
+
+.tools {
+    background-image: url(../image/background\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+}
+
+.tools__item {
+    padding-top: 55px;
+    padding-bottom: 150px;
+    width: 900px;
+    align-items: center;
+    margin: auto;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 86px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.tools__item span {
+    color: #FFA26B;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart__img {
+    margin-right: 232px;
+    width: 740px;
+}
+
+.chart__list {
+    width: 588px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 38px 47px 26px 47px;
+}
+
+.chart__item {
+    display: flex;
+}
+
+.chart__mark {
+    width: 26px;
+    height: 26px;
+    padding-right: 20px;
+}
+
+.chart__paragraph {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+    text-align: start;
+    padding-bottom: 26px;
+}
+
+@media (max-width:360px) {
+    .header {
+        background-size: cover;
+        background-position: -125px center;
+    }
+
+    .container {
+        max-width: 360px;
+        padding: 0;
+    }
+
+    .header__inner {
+        width: 268px;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+
+    .home {
+        font-size: 17px;
+        line-height: 20px;
+        padding-left: 13px;
+        max-width: 211px;
+    }
+
+    .logo__img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .crypto {
+        padding-top: 158px;
+        padding-bottom: 271px;
+    }
+
+    .crypto__title {
+        font-size: 34px;
+        line-height: 41px;
+        width: 225px;
+        padding-bottom: 36px;
+    }
+
+    .crypto__text {
+        font-size: 15px;
+        line-height: 18px;
+        width: 259px;
+        padding-bottom: 52px;
+    }
+
+    .crypto__link {
+        font-size: 17px;
+        line-height: 20px;
+        padding: 16px 35px 15px 34px;
+    }
+
+    .arrow {
+        display: flex;
+        padding-bottom: 22px;
+    }
+
+    .info {
+        height: 666px;
+        padding-top: 36px;
+        padding-bottom: 0px;
+    }
+
+    .info__inner {
+        display: block;
+        justify-content: none;
+        margin-bottom: 36px;
+    }
+
+    .info__text {
+        padding-top: 0;
+        padding-bottom: 36px;
+        margin-left: 29px;
+        width: 328px;
+        font-size: 34px;
+        line-height: 41px;
+    }
+
+    .info__title {
+        margin-right: 0;
+    }
+
+    .coin {
+        flex-basis: 330px;
+        width: 315px;
+        margin-left: 29px;
+        padding: 0;
+        background: #1A051D;
+        border-radius: none;
+    }
+
+    .coin__img {
+        padding-right: 16px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .coin__title {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .coin__subtitle {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .coin__money {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .coin__percent {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .coin__button {
+        font-size: 17px;
+        line-height: 20px;
+        padding: 7px 10px 8px 10px;
+        margin-left: 16px;
+    }
+
+    .info__link {
+        font-size: 17px;
+        line-height: 20px;
+        width: 100px;
+        padding: 16px 43px 15px 44px;
+        text-align: center;
+        display: flex;
+        margin: auto;
+        margin-bottom: 36px;
+    }
+
+    .tools {
+        background-size: cover;
+        background-position: -125px center;
+        height: 671px;
+    }
+
+    .tools__item {
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 41px;
+        width: 304px;
+        padding-top: 36px;
+        padding-bottom: 42px;
+        text-align: start;
+    }
+
+    .chart {
+        width: 302px;
+        display: block;
+        justify-content: none;
+        margin: auto;
+    }
+
+    .chart__img {
+        width: 302px;
+        height: 156px;
+        margin: 0;
+        padding-bottom: 34px;
+    }
+
+    .chart__picture {
+        width: 302px;
+        height: 156px;
+
+    }
+
+    .chart__list {
+        width: 284px;
+        height: 220px;
+        padding: 10px 6px 10px 12px;
+        margin: auto;
+    }
+
+    .chart__mark {
+        width: 16px;
+        height: 16px;
+        padding-right: 10px;
+    }
+
+    .chart__paragraph {
+        width: 256px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+
+    }
+
+    .chart__item:nth-last-child(1) {
+        padding-bottom: 16px;
+    }
+}
